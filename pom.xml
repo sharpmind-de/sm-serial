@@ -19,7 +19,7 @@
 
     <scm>
         <developerConnection>
-            scm:svn:${svn.base.url}/trunk/sm-serial/
+            scm:svn:http://svn/dengler/cbox/rfz/rnd/sm-serial/trunk/sm-serial/
         </developerConnection>
     </scm>
 
@@ -65,7 +65,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.0</version>
                 <configuration>
-                    <tagBase>${svn.base.url}/tags/</tagBase>
+                    <tagBase>http://svn/dengler/cbox/rfz/rnd/sm-serial/tags/</tagBase>
                 </configuration>
             </plugin>
 
