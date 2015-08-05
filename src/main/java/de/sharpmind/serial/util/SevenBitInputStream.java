@@ -5,6 +5,10 @@ import java.io.InputStream;
 
 /**
  * Input stream to read 7bit data
+ *
+ * Wrap the serial port input stream like this:
+ *
+ * InputStream in = new SevenBitInputStream(smSerialPort.getInputStream())
  */
 public class SevenBitInputStream extends InputStream {
     private InputStream inputStream;
