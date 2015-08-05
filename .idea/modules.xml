@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ibis-sniffer.iml" filepath="$PROJECT_DIR$/ibis-sniffer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sm-ibis.iml" filepath="$PROJECT_DIR$/sm-ibis.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-serial.iml" filepath="$PROJECT_DIR$/sm-serial.iml" />
     </modules>
   </component>
