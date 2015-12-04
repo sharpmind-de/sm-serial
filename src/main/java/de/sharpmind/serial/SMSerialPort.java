@@ -190,4 +190,35 @@ public class SMSerialPort {
         serial.notifyOnDataAvailable(b);
     }
 
+
+    @Override
+    public String toString() {
+        String parString = null;
+
+        switch (parity) {
+            case SerialPort.PARITY_NONE:
+                parString = "N";
+                break;
+            case SerialPort.PARITY_EVEN:
+                parString = "E";
+                break;
+            case SerialPort.PARITY_MARK:
+                parString = "M";
+                break;
+            case SerialPort.PARITY_ODD:
+                parString = "O";
+                break;
+            case SerialPort.PARITY_SPACE:
+                parString = "S";
+                break;
+
+        }
+
+        return String.format("SMSerialPort{%s-%d%s%d}",
+                port,
+                databits,
+                parString,
+                stopbits);
+    }
+
 }
