@@ -11,21 +11,23 @@ Get a serial port connection suitable for IBIS bus:
 SMSerialPort serialPort = SMSerialPort.getPort_7E2("/dev/ttyS0", 9600);
 ```
 
-Get a serial connectio to a modem:
+Get a serial connection to a modem:
 
 ```
-SMSerialPort serialPort;
-BufferedReader modemReader;
+private SMSerialPort serialPort;
+private BufferedReader modemReader;
 private BufferedWriter modemWriter;
 
 public boolean connect() {
 	if (serialPort != null && serialPort.isConnected()) return true;
 
-	this.serialPort = SMSerialPort.getPort_8N1("/dev/modem", 57600);
+	serialPort = SMSerialPort.getPort_8N1("/dev/modem", 57600);
 
 	if (serialPort.connect() {
 		this.modemReader = new BufferedReader(new InputStreamReader(serialPort.getInputStream()));
-        	this.modemWriter = new BufferedWriter(new OutputStreamWriter(serialPort.getOutputStream()));
+		this.modemWriter = new BufferedWriter(new OutputStreamWriter(serialPort.getOutputStream()));
+
+		serialPort.addDataAvailableListener(this);
 	}
 
 	return serialPort.isConnected();
