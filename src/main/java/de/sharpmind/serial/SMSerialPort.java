@@ -221,4 +221,51 @@ public class SMSerialPort {
                 stopbits);
     }
 
+    public int getBaudRate() {
+        return serial.getBaudRate();
+    }
+
+    public int getDataBits() {
+        return serial.getDataBits();
+    }
+
+    public int getStopBits() {
+        return serial.getStopBits();
+    }
+
+    public boolean isCTS() {
+        return serial.isCTS();
+    }
+
+    public boolean isCD() {
+        return serial.isCD();
+    }
+
+    public boolean isDTR() {
+        return serial.isDTR();
+    }
+
+    public void setDTR(boolean b) {
+        serial.setDTR(b);
+    }
+
+    public void setRTS(boolean b) {
+        serial.setRTS(b);
+    }
+
+    public boolean isDSR() {
+        return serial.isDSR();
+    }
+
+    public boolean isRI() {
+        return serial.isRI();
+    }
+
+    public boolean isRTS() {
+        return serial.isRTS();
+    }
+
+    public boolean setLowLatency() throws UnsupportedCommOperationException {
+        return serial.setLowLatency();
+    }
 }
