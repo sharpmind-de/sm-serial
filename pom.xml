@@ -4,7 +4,7 @@
 
     <groupId>de.sharpmind.serial</groupId>
     <artifactId>sm-serial</artifactId>
-    <version>1.3</version>
+    <version>1.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>sm-serial</name>
@@ -41,8 +41,7 @@
         <url>https://github.com/sharpmind-de/sm-serial</url>
         <connection>scm:git:https://github.com/sharpmind-de/sm-serial.git</connection>
         <developerConnection>scm:git:git@github.com:sharpmind-de/sm-serial.git</developerConnection>
-      <tag>sm-serial-1.3</tag>
-  </scm>
+    </scm>
 
     <!-- Environment Settings -->
     <distributionManagement>
