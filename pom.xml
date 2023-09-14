@@ -40,7 +40,7 @@
     <scm>
         <url>https://github.com/sharpmind-de/sm-serial</url>
         <connection>scm:git:ssh://git@github.com/sharpmind-de/sm-serial.git</connection>
-        <developerConnection>scm:git:ssh@github.com/sharpmind-de/sm-serial.git</developerConnection>
+        <developerConnection>scm:git:ssh://git@github.com/sharpmind-de/sm-serial.git</developerConnection>
     <tag>sm-serial-1.6</tag>
   </scm>
 
